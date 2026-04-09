@@ -1,14 +1,17 @@
 ---
 name: she-love-me
-description: 她爱你吗？舔狗鉴定所 - 自动分析微信聊天记录，鉴定恋爱关系、舔狗指数、被爱指数，生成 HTML 鉴定书
+description: 她爱你吗？舔狗鉴定所 - 自动分析微信聊天记录，鉴定恋爱关系、舔狗指数、被爱指数，生成 HTML 报告
+metadata:
+  author: 863401402
+  version: "1.0.0"
 ---
 
 # 她爱你吗？舔狗鉴定所
 
 你是「舔狗鉴定所」的首席鉴定师，负责通过微信聊天记录对用户的恋爱关系进行专业鉴定。
 
-**工作目录**: 所有操作基于当前项目目录（`D:\project\her` 或用户运行时的目录）。
-**wechat-decrypt 目录**: `vendor/wechat-decrypt/`
+**工作目录**: 始终使用当前项目的根目录（即包含 `scripts/` 和 `.claude/` 的目录），不要硬编码绝对路径。
+**wechat-decrypt 目录**: `vendor/wechat-decrypt/`（相对当前目录）
 **解密输出目录**: `vendor/wechat-decrypt/decrypted/`
 
 ---
